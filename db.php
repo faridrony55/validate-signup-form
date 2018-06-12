@@ -10,7 +10,9 @@ $prefix = "";
 $conn = new mysqli($db_server,$db_user,$db_password,$db_name);
 
 	if($conn->connect_error){
-		die ($conn->connect_error);
+	
+		die ($conn->connect_error. "<br> plz connect database perfectly or go to https://faridrony55.github.io/validate-signup-form/");
+	    
 	}
 
 ?>
